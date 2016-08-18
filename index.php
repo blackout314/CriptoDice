@@ -19,16 +19,17 @@ include './inc/start.php';
     <title><?php echo $settings['title'].' - '.$settings['description']; ?></title>
     <link rel="shortcut icon" href="./favicon.ico">
     <link rel="stylesheet" type="text/css" href="themes/<?php echo $settings['activeTheme']; ?>/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="content/ext/msgbox/Scripts/jquery.msgBox.js"></script>
     <link rel="stylesheet" type="text/css" href="content/ext/msgbox/Styles/msgBoxLight.css">
-    <script type="text/javascript" src="content/ext/qtip/jquery.qtip.min.js"></script>
     <link rel="stylesheet" type="text/css" href="content/ext/qtip/jquery.qtip.min.css">
-    <script type="text/javascript" src="js/colors.js"></script>    
-    <?php include './js/includer.php'; ?>
   </head>
   <body>
     <?php include './themes/'.$settings['activeTheme'].'/frontpage.php'; ?>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.js"></script>
+    <script type="text/javascript" src="content/ext/msgbox/Scripts/jquery.msgBox.js"></script>
+    <script type="text/javascript" src="content/ext/qtip/jquery.qtip.min.js"></script>
+    <script type="text/javascript" src="js/colors.js"></script>    
+    <?php include './js/includer.php'; ?>
   </body>
 </html>
 <?php include './inc/end.php'; ?>
